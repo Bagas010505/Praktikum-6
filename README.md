@@ -1,11 +1,21 @@
-# latihan1
-echo "# latihan-1" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Bagas010505/latihan-1.git
-git push -u origin main
-git remote add origin https://github.com/Bagas010505/latihan-1.git
-git branch -M main
-git push -u origin main
+Langkah-langkah
+Membuat Dictionary daftar kontak
+kontak = {'Ari': '081267888', 'Dina': '087677776'}
+Menampilkan Kontak Ari
+print("Kontak Ari", kontak['Ari'])
+Menambahkan kontak Riko
+kontak['Riko'] = '087654544'
+Mengubah kontak Dina
+kontak['Dina'] = '088999776'
+Tampilkan semua nama
+for nama in kontak.keys():
+    print(nama)
+Tampilkan semua nomor
+for nomor in kontak.values():
+    print(nomor)
+Tampilkan daftar Nama dan nomornya
+for nama, nomor in kontak.items():
+    print(f"{nama}: {nomor}")
+Menghapus kontak Dina
+del kontak['Dina']
+
